@@ -77,3 +77,35 @@ img:hover
 
 .text
 	{background-color: #608f47; color: black;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  display:block;
+align: center;
+	background-color:rgb(102, 102, 51, 0.5) ;
+
+
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+    display:inline-block;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+    display:inline-block;
+}
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+    display:inline-block;
+}
