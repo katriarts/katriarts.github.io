@@ -91,41 +91,16 @@ align: center;
 
 }
 
-
-.fa-youtube {
-	padding: 20px;
-  font-size: 30px;
-  width: 55px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  display:block;
-align: center;
-  background: #bb0000;
-  color: white;
+.container{
+	position:relative;
+	text-align: center;
 }
 
-.fa-instagram {
-	padding: 20px;
-  font-size: 30px;
-  width: 55px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  display:block;
-align: center;
-  background: #125688;
-  color: white;
+
+.imgfront{
+	position:absolute;
+	top:50%
+	left:50%
+	transform:translate(-50%, -50%);
 }
-.fa-tumblr {
-	padding: 20px;
-  font-size: 30px;
-  width: 55px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  display:block;
-align: center;
-  background: #2c4762;
-  color: white;
-}
+
