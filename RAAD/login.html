@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<title>RAAD Login</title>
+	<head>
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="mobile.css"/>
+	</head>
+	<body>
+		<div class="smartphone">
+			<div class="content">
+				<!----------LOADING PART---------->
+				<body onload="myFunction()" style="margin:0;">
+					<div id="loader"></div>
+					<div style="display:none;" id="myDiv" class="animate-bottom">
+						
+							<!----------LOGIN FORM---------->
+						<form class="container">
+							<br>
+							<!----------HELP---------->
+							<a href="#"><b>help?</a>
+							<br><br><br><br>
+								<div class="imgcontainer">
+									<!----------USERNAME---------->
+									<label for="uname" class="words2"><b>Username</b></label>
+									<input type="text"
+											placeholder="Enter Username" 
+											name="uname" required>
+									<!----------PASSWORD---------->
+									<label for="psw" class="words2"><b>Password</b></label>
+									<input type="password"
+											placeholder="Enter Password" 
+											name="psw" required>
+									<!----------LOGIN---------->
+									<form action="raadapp.html">
+										<button type="submit" class="words2"><b>Login</button>
+									</form>
+								</div>
+								
+								<div class="imgcontainer">
+									<!----------CANCEL---------->
+									<form action="register.html">
+										<button type="submit" class="words2"><b>cancel</button>
+										<br><br><br><br><br>
+										<!----------FORGOT PASSWORD---------->
+										<a href="#">forgot password?</a>
+									</form>
+								</div>				
+						</form>
+					</div>	
+				</body>			
+			</div>	
+		</div>
+	</body>
+
+	
+	<script>
+	var myVar;
+	
+	function myFunction(){
+		myVar = setTimeout(showPage, 3000);
+	}
+	function showPage(){
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+	</script>
+		
+
+</html>

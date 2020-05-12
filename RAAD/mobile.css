@@ -1,0 +1,310 @@
+/*the device with borders*/
+.smartphone{
+	position:relative;
+	width:360px;
+	height:640px;
+	margin:auto;
+	border:16px black solid;
+	border-top-width:60px;
+	border-bottom-width:60px;
+	border-radius:36px;
+}
+			
+/*the horizontal line on the top of the device*/
+.smartphone:before{
+	content:'';
+	display:block;
+	width:60px;
+	height:5px;
+	position:absolute;
+	top:-30px;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background:#333;
+	border-radius:10px;
+}
+			
+/*the screen (or content) of the device*/
+.smartphone .content{
+	width:360px;
+	height:640px;
+	background:rgb(40,38,39);
+}
+
+/*----rrrrr--------aaaa----------aaaa------ddddd-------------*/
+/*----rr--rr------aa--aa--------aa--aa-----dd---dd-----------*/
+/*----rrrrr------aaaaaaaa------aaaaaaaa----dd----dd----------*/
+/*----rr--rr----aa------aa----aa------aa---dd---dd-----------*/
+/*----rr---rr--aa--------aa--aa--------aa--ddddd-------------*/
+
+/*APP LOGO CENTER*/
+.center {
+	display:flex;
+	justify-content: center;
+}
+
+/*ALL IMAGE PRESSED*/
+img{
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+img:hover{
+	opacity:0.7;
+	filter:alpha(opacity=50);
+}
+
+.words1{
+	font-family:Roboto;
+	font-size:50%;
+	color:rgb(219,219,219);
+	text-align:center;
+}
+
+/*----rrrrr--------aaaa----------aaaa------ddddd-------------*/
+/*----rr--rr------aa--aa--------aa--aa-----dd---dd-----------*/
+/*----rrrrr------aaaaaaaa------aaaaaaaa----dd----dd----------*/
+/*----rr--rr----aa------aa----aa------aa---dd---dd-----------*/
+/*----rr---rr--aa--------aa--aa--------aa--ddddd-------------*/
+
+/*center the loader*/
+#loader{
+	position:absolute;
+	left:55%;
+	top:50%;
+	z-index:1;
+	width:120px;
+	height:120px;
+	margin:-75px 0 0 -75px;
+	border:16px solid #f3f3f3;
+	border-radius:50%;
+	border-top:16px solid #282627;
+	width:90px;
+	height:90px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+			
+@-webkit-keyframes spin{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+			
+@keyframes spin{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+			
+/*Add animation to "page content"*/
+.animation-bottom{
+	position:relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s;
+}
+			
+@-webkit-keyframes animatebottom{
+	from {bottom:-100px; opacity:0}
+	to {bottom:0px; opacity:1}
+}
+			
+@keyframes animatebottom{
+	from {bottom:-100px; opacity:0}
+	to {bottom:0; opacity:1}
+}
+			
+#myDiv{
+	display:none;
+	text-align:center;
+}
+
+/*----rrrrr--------aaaa----------aaaa------ddddd-------------*/
+/*----rr--rr------aa--aa--------aa--aa-----dd---dd-----------*/
+/*----rrrrr------aaaaaaaa------aaaaaaaa----dd----dd----------*/
+/*----rr--rr----aa------aa----aa------aa---dd---dd-----------*/
+/*----rr---rr--aa--------aa--aa--------aa--ddddd-------------*/
+
+.words2{
+	font-family:Roboto;
+	font-size:100%;
+	color:rgb(219,219,219);
+}
+
+body{font-family:Roboto}
+
+/*set a style for all buttons*/
+	button{
+	background-color: #282627;
+	color:rgb(219,219,219);
+	font-family:Roboto;
+	font-size: 250%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover{
+	opacity:1;
+	color:rgb(219,219,219);
+	background-color: rgb(219,219,219);
+	color: black;
+}
+
+		
+/*Full-width input fields*/
+input[type=text], input[type=password]{
+	width:100%;
+	padding:12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.container{
+	padding:16px;
+}
+
+/*center th eimage and position the close button*/
+.imgcontainer{
+	text-align:left;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+span.psw{
+	float:right;
+	padding-top: 16px;
+}	
+
+a{
+	color: rgb(219,219,219);
+	float:right;
+	padding-top: 16px;
+}
+
+	
+/*----rrrrr--------aaaa----------aaaa------ddddd-------------*/
+/*----rr--rr------aa--aa--------aa--aa-----dd---dd-----------*/
+/*----rrrrr------aaaaaaaa------aaaaaaaa----dd----dd----------*/
+/*----rr--rr----aa------aa----aa------aa---dd---dd-----------*/
+/*----rr---rr--aa--------aa--aa--------aa--ddddd-------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		
+/*extra styles for the cancel button*/
+.cancelbtn{
+	width:auto;
+	padding: 10px 18px;
+	background-color:#f44336;
+}
+		
+
+		
+img.avatar {
+	width:40%;
+	border-radius:50%;
+}
+		
+
+		
+
+		
+/*the modal (background)*/
+.modal{
+	display:none; /*hidden bby default*/
+	position: fixed; /*stay in place*/
+	z-index: 1; /*Sit on top*/
+	left:0;
+	top:0;
+	/*width:70%;  /*full width*/
+	/*height:100%; /*full height*/
+	overflow: auto; /*enable scroll if needed*/
+	background-color: rgb(0,0,0); /*fallback color*/
+	background-color: rgba(0,0,0,0.4); /*black with opacity*/
+	padding-top:10px;
+}
+		
+/*modal content/box*/
+.modal-content{
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /*5% from the top, 15% from the bottom and centered*/
+	border: 1px solid #888;
+	width: 80%; /*could be more or less, depending on screen size*/
+}		
+
+/*the close button (x)*/
+.close{
+	position: absolute;
+	right:25px;
+	top:0;
+	color: #000;
+	font-size:35px;
+	font-weight: bold;
+}
+		
+.close:hover,
+.close:focus {
+	color:red;
+	cursor: pointer;
+}
+		
+/*Add zoom animation*/
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+		
+@webkit-keyframes animatezoom {
+	from {-webkit-transform:scale(0)}
+	to {-webkit-transform:scale(1)}
+}
+		
+@keyframes animatezoom{
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+		
+/*change styles for span and cancel button on extra small screens*/
+@media screen and (max-width: 30px){
+	span.psw{
+		display: block;
+		float: none;
+	}	
+	.cancelbtn{
+		width: 100%;
+	}
+}
+
+/*----rrrrr--------aaaa----------aaaa------ddddd-------------*/
+/*----rr--rr------aa--aa--------aa--aa-----dd---dd-----------*/
+/*----rrrrr------aaaaaaaa------aaaaaaaa----dd----dd----------*/
+/*----rr--rr----aa------aa----aa------aa---dd---dd-----------*/
+/*----rr---rr--aa--------aa--aa--------aa--ddddd-------------*/
