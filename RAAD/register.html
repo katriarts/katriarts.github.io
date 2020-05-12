@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<title>RAAD Register</title>
+	<head>
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="mobile.css"/>
+	</head>
+	<body>
+		<div class="smartphone">
+			<div class="content">
+				<!----------LOADING PART---------->
+				<body onload="myFunction()" style="margin:0;">
+					<div id="loader"></div>
+					<div style="display:none;" id="myDiv" class="animate-bottom">
+						<!----------REGISTER PART---------->
+						<div class="center">
+							<img src="images\logo1.png" vspace="100" style="width:40%">
+						</div>
+						<div class="words1">
+							<h1 style="font-size:250%">Welcome to RAAD</h1>
+							<!----------LOGIN BUTTON---------->
+							
+							<form action="login.html">
+								<button type="submit" style="width:70%;"><b>Login</button>
+							</form>
+							<!----------SIGNUP BUTTON---------->
+							<form action="signup.html">
+								<button type="submit" style="width:70%;"><b>Sign-up</button>
+							</form>
+						</div>
+							
+					</div>
+			</div>
+		</div>
+	</body>
+
+	
+	<script>
+	var myVar;
+	
+	function myFunction(){
+		myVar = setTimeout(showPage, 3000);
+	}
+	function showPage(){
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+	</script>
+		
+
+</html>

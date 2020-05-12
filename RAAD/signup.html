@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<title>RAAD Signup</title>
+	<head>
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="mobile.css"/>
+	</head>
+	<body>
+		<div class="smartphone">
+			<div class="content">
+				<!----------LOADING PART---------->
+				<body onload="myFunction()" style="margin:0;">
+					<div id="loader"></div>
+					<div style="display:none;" id="myDiv" class="animate-bottom">
+						
+							<!----------SIGNUP FORM---------->
+							<form class="container">
+							<br><br><br><br><br>
+								<div class="imgcontainer">
+								<!----------NAME---------->
+								<label for="name" class="words2"><b>Name</b></label>
+									<input type="text"
+											placeholder="Enter Name" 
+											name="name" required>
+								<!----------PASSWORD---------->
+									<label for="psw" class="words2"><b>Password</b></label>
+									<input type="password"
+											placeholder="Enter Password" 
+											name="psw" required>
+								<!----------GENDER M---------->
+								<br><br>
+									<label for="gender" class="words2" value="m"><b>Male</b></label>
+									<input type="radio" 
+											name="gender" required>
+								&nbsp &nbsp
+								<!----------GENDER F---------->
+									<label for="gender" class="words2" value="f"><b>Female</b></label>
+									<input type="radio" 
+											name="gender" required>	
+								<br><br>
+								<!----------EMAIL---------->
+									<label for="email" class="words2"><b>Email</b></label>
+									<input type="text"
+											placeholder="Enter Email" id="email"
+											name="email" required>
+											
+								<!----------SIGNUP---------->
+									<form action="newhome.html">
+									<button type="submit" class="words2"><b>Sign-up</button>
+								</div>
+						</form>
+							<div class="imgcontainer">
+							<!----------CANCEL---------->
+							<form action="register.html">
+								<button type="submit" class="words2"><b>cancel</button>
+				</div>				
+							
+						</div>	
+							
+							
+							
+						</div>	
+					</div>
+			</div>
+		</div>
+	</body>
+
+	
+	<script>
+	var myVar;
+	
+	function myFunction(){
+		myVar = setTimeout(showPage, 3000);
+	}
+	function showPage(){
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("myDiv").style.display = "block";
+	}
+	</script>
+		
+
+</html>
